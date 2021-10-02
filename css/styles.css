@@ -11288,14 +11288,44 @@ section {
 }
 
 #landing-page{
-  background-image: linear-gradient(to bottom right, black,  rgb(67, 74, 82));
+  background-image: linear-gradient(to bottom, black,  rgb(48, 53, 59));
   min-height: 100vh;
 }
 
 #profile-pic{
   border-radius: 0 50% 50% 50%;
+  padding: 0px;
+  margin-top: 70px;
+  width: 300px; 
+  height: 300px;
 }
 
 #intro-text{
   color: white;
+  font-size: 3.5vh;
+  margin-top: 70px;
 }
+
+#about{
+  background-color:  rgb(48, 53, 59);
+  color: white;
+  padding-top: 15vh;
+}
+
+.icons{
+  height: 50px;
+  width: 50px;
+}
+
+.code-icons{
+  background-color: rgb(48, 53, 59);
+  border: none;
+  color: white;
+  width: 50px;
+}
+
+.code-tags{
+  font-size: 25px;
+  width: 100px;
+}
+
