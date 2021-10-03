@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/3a6049e491.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="page-top">
@@ -24,7 +25,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#projects">My projects</a></li>
-                    <li class="nav-item"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
                 </ul>
             </div>
         </div>
@@ -34,7 +35,9 @@
         <div class="align-self-center container col-lg-8">
             <div class="d-flex flex-wrap justify-content-center">
                 <div class="d-flex col-xl-6 col-12 justify-content-center">
-                    <img id="profile-pic" class="col-6" src="https://picsum.photos/300" alt="Card image cap">
+                    <img id="profile-pic" class="col-6"
+                        src="https://res.cloudinary.com/ddvby6wc1/image/upload/v1633277410/profile_pic_1_kjmvq3.jpg"
+                        alt="Card image cap">
                 </div>
                 <div class="col-xl-6 text-center col-12" id="intro-text">
                     <h2> Hi, Pleasure to meet you!</h2>
@@ -43,7 +46,8 @@
                         with a passion for learning new things. Whether it be studying Mandarin, learning React, or
                         working on personal projects I am always enthusiastic about everything I do.
                     </p>
-
+                    <button onclick="window.open('resume.pdf')" class="btn btn-lg btn-light">Check out my
+                        resume</button>
                 </div>
             </div>
         </div>
@@ -116,6 +120,13 @@
                                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
                             </div>
                             <div class="align-middle code-tags p-2">Firebase</div>
+                        </div>
+                        <div class="d-flex p-4">
+                            <div class="code-icons">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                            </div>
+                            <div class="align-middle code-tags p-2">React</div>
                         </div>
                     </div>
                 </div>
@@ -222,18 +233,8 @@
                 </button>
             </div>
     </section>
-
-
-
-
-
-
-
-
-
-
     <!-- Contact section-->
-    <section id="contact">
+    <!-- <section id="contact">
         <div class="container px-4">
             <div class="row gx-4 justify-content-center">
                 <div class="col-lg-8">
@@ -244,11 +245,22 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container px-4">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
+            <div class="d-flex justify-content-center">
+                <div class="p-2 "><a href="https://github.com/pierre-sarrailh"
+                        class="footerIcons fa fa-github fa-2x"></a>
+                </div>
+                <div class="p-2 "><a href="https://www.linkedin.com/in/pierre-sarrailh"
+                        class="footerIcons fa fa-linkedin-square fa-2x"></a></div>
+                <div class="p-2 "><a href="mailto:pierresarrailh@gmail.com"
+                        class="footerIcons fa fa-envelope fa-2x"></a>
+                </div>
+            </div>
+
+            <p class="m-0 text-center text-white">Copyright &copy; Pierre Sarrailh 2021</p>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
