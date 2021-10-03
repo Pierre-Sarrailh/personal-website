@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="Pierre Sarrailh's professional portfolio website" />
+    <meta name="author" content="Pierre Sarrailh" />
     <title>Pierre Sarrailh</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -22,9 +22,9 @@
                     class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">My projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#projects">My projects</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -53,7 +53,9 @@
         <div class="container px-4">
             <div class="row gx-4 justify-content-center">
                 <div class="col-lg-8">
-                    <h2>About Me</h2>
+                    <div class=" text-center">
+                        <h2>About Me</h2>
+                    </div>
                     <p class="lead">I was first introduced to coding when I was in 8th grade, some of my first projects
                         were websites actually. Since then I have created many new apps that range from doing data
                         analysis to server interactions, I would love it if you could look at some of my projects, I
@@ -101,24 +103,135 @@
                             </div>
                             <div class="align-middle code-tags p-2">Bootstrap</div>
                         </div>
+                        <div class="d-flex p-4">
+                            <div class="code-icons">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" />
+                            </div>
+                            <div class="align-middle code-tags p-2">Django</div>
+                        </div>
+                        <div class="d-flex p-4">
+                            <div class="code-icons">
+                                <img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+                            </div>
+                            <div class="align-middle code-tags p-2">Firebase</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Services section-->
-    <section class="bg-light" id="services">
-        <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
-                <div class="col-lg-8">
-                    <h2>Past projects</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore,
-                        expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda
-                        laborum vel, labore ut velit dignissimos.</p>
-                </div>
+    <section id="projects">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-        </div>
+            <div class="carousel-inner">
+                <div id="carousel1" class="carousel-item active">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Royal connections</h1>
+                            <p>Have you ever wondered what the relation is between queen Elizabeth II and Keiser
+                                Willhelm I, well if you ever have this is the project for you! In this project I used
+                                SPARQL, a query <span id="dots">... </span><span id="more"
+                                    style="display: none;">language similar to SQL, to
+                                    query the attributes of WikiData articles
+                                    (wikipedia's machine friendly interface) in order to extract the familial
+                                    connections
+                                    between different medieval European royal figures. Then I used a directed graph
+                                    implementation where every edge represents a connection between parent and child to
+                                    show
+                                    the connections between royals. To show the exact connection between two royals I
+                                    used a
+                                    breadth-first and depth-first algorithm to show the different amounts of times each
+                                    of
+                                    these algorithms take to search. Feel free to try it out yourself, click the button
+                                    to
+                                    take you to the github repository and then follow the instruction in the readme to
+                                    use. </span><a onclick="toggleLength()" id="lenBtn" class="lenBtn">Read more</a>
+                            </p>
+                            <p><a class="btn btn-lg btn-primary"
+                                    href="https://github.com/Pierre-Sarrailh/royal-connections/tree/main"
+                                    target="_blank">Open on
+                                    Github</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel2" class="carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Quizz website</h1>
+                            <p>Over the summer of 2021 I worked for an agile-oriented consulting company called
+                                IncrementOne. During my time there I was asked to build a quizzing website that
+                                would <span id="dots2">... </span><span id="more2" style="display: none;">get the
+                                    employees of the companies they would consult to assess the type of
+                                    company they work for. I used Django as the main framework to create the app with
+                                    SQL as the server languageand used Javascript as the main language for our data
+                                    analysis. However as I completed this code while working under a IncrementOne my
+                                    contract does not allow me to share the code I made, click the button if you want to
+                                    see the company's website</span><a onclick="toggleLength2()" id="lenBtn2"
+                                    class="lenBtn">Read
+                                    more</a>
+                            </p>
+                            <p><a class="btn btn-lg btn-primary" href="https://www.incrementone.com/"
+                                    target="_blank">Open IncrementOne</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel3" class="carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Rainman</h1>
+                            <p>Isn't it the worst when you are driving around following the instructions on google maps
+                                and then find out that a road you need to use it flooded, or the snow hasn't been
+                                cleared out, or <span id="dots3">... </span><span id="more3" style="display: none;">it
+                                    is covered in black ice? well with Rainman you will never have to
+                                    worry about it again! Rainman is an android app that croudsources weather data from
+                                    its users and uses it to
+                                    map road conditions. I used Java, Firebase and various google API's to build this
+                                    app. The app works by allowing users to create posts in which they describe road and
+                                    weather conditions and then creates a pin at their position describing the weather
+                                    conditions. Then users can see everyones pins in an interactive map to better plan
+                                    their journeys. Click on the button below if you want to download the APK or just
+                                    look through my code</span><a onclick="toggleLength3()" id="lenBtn3"
+                                    class="lenBtn">Read
+                                    more</a>
+                            </p>
+                            <p><a class="btn btn-lg btn-primary" href="https://github.com/Pierre-Sarrailh/Rainman"
+                                    target="_blank">Open on
+                                    Github</a></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <div class="carousel-slide-left">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </div>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <div class="carousel-slide-right">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </div>
+                </button>
+            </div>
     </section>
+
+
+
+
+
+
+
+
+
+
     <!-- Contact section-->
     <section id="contact">
         <div class="container px-4">
