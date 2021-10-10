@@ -17,7 +17,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div class="container px-4">
-            <a class="navbar-brand" href="#page-top">Pierre</a>
+            <a class="navbar-brand" href="#page-top">Pierre Sarrailh</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
                     class="navbar-toggler-icon"></span></button>
@@ -25,7 +25,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link scrollto" href="#projects">My projects</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+                    <li class="nav-item"><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -42,12 +42,13 @@
                 <div class="col-xl-6 text-center col-12" id="intro-text">
                     <h2> Hi, Pleasure to meet you!</h2>
                     <br>
-                    <p>My name is Pierre, I'm an economics and computer science student at the univeristy of Toronto
-                        with a passion for learning new things. Whether it be studying Mandarin, learning React, or
-                        working on personal projects I am always enthusiastic about everything I do.
+                    <p>My name is Pierre, I'm a Computer Science and Economics student at the University of Toronto
+                        - St. George. Whether it be studying Mandarin, learning React, or working on personal projects,
+                        I ceaselessly seek to expand and deepen my avenues of knowledge.
                     </p>
-                    <button onclick="window.open('resume.pdf')" class="btn btn-lg btn-light">Check out my
-                        resume</button>
+                    <button onclick="window.open('resume.pdf')" class="btn btn-lg btn-light m-1">Resume</button>
+                    <a href="https://github.com/Pierre-Sarrailh" class="btn btn-lg btn-light m-1">Github</a>
+                    <a href="https://www.linkedin.com/in/pierre-sarrailh/" class="btn btn-lg btn-light m-1">Linkedin</a>
                 </div>
             </div>
         </div>
@@ -60,11 +61,10 @@
                     <div class=" text-center">
                         <h2>About Me</h2>
                     </div>
-                    <p class="lead">I was first introduced to coding when I was in 8th grade, some of my first projects
-                        were websites actually. Since then I have created many new apps that range from doing data
-                        analysis to server interactions, I would love it if you could look at some of my projects, I
-                        promise some of them are quite fun! But if you don't have the time here are the languages I am
-                        good at:</p>
+                    <p class="lead">I was first introduced to coding in 8th grade, and some of my first projects were
+                        actually websites. Since then I have developed apps with functions ranging from data analysis to
+                        server interactions. If you’d like to take a look, some of my projects are linked below! For a
+                        quick overview, here are the languages I specialize in: </p>
                     <div class="d-flex flex-wrap justify-content-center">
                         <div class="d-flex p-4">
                             <div class="code-icons">
@@ -147,24 +147,25 @@
                     <div class="container">
                         <div class="carousel-caption text-start">
                             <h1>Royal connections</h1>
-                            <p>Have you ever wondered what the relation is between queen Elizabeth II and Keiser
-                                Willhelm I, well if you ever have this is the project for you! In this project I used
-                                SPARQL, a query <span id="dots">... </span><span id="more"
+                            <p class="big-screen-text">Did you know that Queen Elizabeth II and Kaiser Wilhelm I, the
+                                King of Germany during World War I, are related? Well, now you do. In this project,
+                                Royal Connections, I used SPARQL, a query <span id="dots">... </span><span id="more"
                                     style="display: none;">language similar to SQL, to
-                                    query the attributes of WikiData articles
-                                    (wikipedia's machine friendly interface) in order to extract the familial
-                                    connections
-                                    between different medieval European royal figures. Then I used a directed graph
-                                    implementation where every edge represents a connection between parent and child to
-                                    show
-                                    the connections between royals. To show the exact connection between two royals I
-                                    used a
-                                    breadth-first and depth-first algorithm to show the different amounts of times each
-                                    of
-                                    these algorithms take to search. Feel free to try it out yourself, click the button
-                                    to
-                                    take you to the github repository and then follow the instruction in the readme to
-                                    use. </span><a onclick="toggleLength()" id="lenBtn" class="lenBtn">Read more</a>
+                                    query the attributes of WikiData articles(wikipedia's machine friendly interface) in
+                                    order to extract the familial connections between different medieval European royal
+                                    figures. I then used a directed graph implementation every edge of which represents
+                                    a connection between parent and child to show the connections between royals. To
+                                    show the exact connection between two royals I used a breadth-first and depth-first
+                                    algorithm. Comparing these algorithms I measured the difference in time each took to
+                                    produce a result. Feel free to try it out yourself: the button below will take you
+                                    to the Github repository.
+                                </span><a onclick="toggleLength()" id="lenBtn" class="lenBtn big-screen-text">Read
+                                    more</a>
+                            </p>
+                            <p class="small-screen-text">
+                                In this project, I used SPARQL to web scrape wiki data and Python to create a tree of
+                                the connections between European royals. I leveraged breadth-first and depth-first
+                                algorithms to then state the relations between these different royals.
                             </p>
                             <p><a class="btn btn-lg btn-primary"
                                     href="https://github.com/Pierre-Sarrailh/royal-connections/tree/main"
@@ -177,17 +178,21 @@
                     <div class="container">
                         <div class="carousel-caption text-start">
                             <h1>Quizz website</h1>
-                            <p>Over the summer of 2021 I worked for an agile-oriented consulting company called
-                                IncrementOne. During my time there I was asked to build a quizzing website that
-                                would <span id="dots2">... </span><span id="more2" style="display: none;">get the
-                                    employees of the companies they would consult to assess the type of
-                                    company they work for. I used Django as the main framework to create the app with
-                                    SQL as the server languageand used Javascript as the main language for our data
-                                    analysis. However as I completed this code while working under a IncrementOne my
-                                    contract does not allow me to share the code I made, click the button if you want to
-                                    see the company's website</span><a onclick="toggleLength2()" id="lenBtn2"
-                                    class="lenBtn">Read
+                            <p class="big-screen-text">This past summer I worked for an Agile-oriented consulting
+                                company called IncrementOne. During my time there, I built a quizzing website that would
+                                enable employees to submit evaluations of <span id="dots2">... </span><span id="more2"
+                                    style="display: none;">their workplace environments. With Django as the main
+                                    framework, I created the app with SQL as the server language and Javascript as the
+                                    main language for our data analysis. Though my contract precludes me from directly
+                                    sharing this code, you can access the company’s website below.
+                                </span><a onclick="toggleLength2()" id="lenBtn2" class="lenBtn big-screen-text">Read
                                     more</a>
+                            </p>
+                            <p class="small-screen-text">
+                                While working for a consulting company this past summer, I used Django, Javascript and
+                                SQL to develop a quiz website that evaluates the management styles of various companies.
+                                Though I’m not allowed to share the source code, the button below will take you to the
+                                IncrementOne website.
                             </p>
                             <p><a class="btn btn-lg btn-primary" href="https://www.incrementone.com/"
                                     target="_blank">Open IncrementOne</a></p>
@@ -198,20 +203,23 @@
                     <div class="container">
                         <div class="carousel-caption text-start">
                             <h1>Rainman</h1>
-                            <p>Isn't it the worst when you are driving around following the instructions on google maps
-                                and then find out that a road you need to use it flooded, or the snow hasn't been
-                                cleared out, or <span id="dots3">... </span><span id="more3" style="display: none;">it
-                                    is covered in black ice? well with Rainman you will never have to
-                                    worry about it again! Rainman is an android app that croudsources weather data from
-                                    its users and uses it to
-                                    map road conditions. I used Java, Firebase and various google API's to build this
-                                    app. The app works by allowing users to create posts in which they describe road and
-                                    weather conditions and then creates a pin at their position describing the weather
-                                    conditions. Then users can see everyones pins in an interactive map to better plan
-                                    their journeys. Click on the button below if you want to download the APK or just
-                                    look through my code</span><a onclick="toggleLength3()" id="lenBtn3"
-                                    class="lenBtn">Read
+                            <p class="big-screen-text">Is there anything worse than when Google Maps leads you to a road
+                                flooded, snowed-in, or covered in black ice? With Rainman, you never have to worry about
+                                that again. Rainman is an Android app I developed using Java, Firebase, and <span
+                                    id="dots3">... </span><span id="more3" style="display: none;"> Google API’s that
+                                    crowdsources weather data from its users to map road conditions. The app works by
+                                    allowing users to create posts in which they describe road and weather conditions.
+                                    The app then creates a pin at their position describing road conditions. Users can
+                                    see all the pins in an interactive map to better plan their journeys. Click the
+                                    button below to download the APK or to look through my code! </span><a
+                                    onclick="toggleLength3()" id="lenBtn3" class="lenBtn big-screen-text">Read
                                     more</a>
+                            </p>
+                            <p class="small-screen-text">
+                                This is an android app I built that crowdsources road conditions to provide users with a
+                                better experience while driving. To build it I mainly used Java and Firebase. The app
+                                allows users to place pins on a map and comment on the condition of the road, the pins
+                                are then made public and all users of the app can see them.
                             </p>
                             <p><a class="btn btn-lg btn-primary" href="https://github.com/Pierre-Sarrailh/Rainman"
                                     target="_blank">Open on
@@ -222,30 +230,59 @@
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                     <div class="carousel-slide-left">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <span class="">Previous</span>
                     </div>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
                     <div class="carousel-slide-right">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                        <span class="">Next</span>
                     </div>
                 </button>
             </div>
     </section>
+    <!-- form url:https://docs.google.com/forms/u/0/d/e/1FAIpQLSdSU2XptGCbVr-n3amrGdhvpBocUsOIQTfu8Z4x91KDtAh3Vg/formResponse -->
+    <!-- name: entry.918177173 -->
+    <!-- email: entry.582861780-->
+    <!-- inquiry: entry.1950627590 -->
     <!-- Contact section-->
-    <!-- <section id="contact">
+    <section id="contact">
         <div class="container px-4">
             <div class="row gx-4 justify-content-center">
                 <div class="col-lg-8">
-                    <h2>Contact us</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat
-                        voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et
-                        repudiandae ipsa exercitationem, in, quo totam.</p>
+                    <div class=" text-center p-4">
+                        <h2>Contact Me</h2>
+                    </div>
+                    <script type="text/javascript">var submitted = false;</script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                        onload="if(submitted)  {window.alert('thank you for your inquiry, I will get back to you as soon as possible.') ;}"></iframe>
+
+                    <form
+                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdSU2XptGCbVr-n3amrGdhvpBocUsOIQTfu8Z4x91KDtAh3Vg/formResponse"
+                        method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                        <div class="form-floating mb-3 form-input">
+                            <input name="entry.918177173" class="form-control bg-dark" type="text" placeholder="Name"
+                                style="color: white;" />
+                            <label for="entry.918177173">Name</label>
+                        </div>
+                        <div class="form-floating mb-3 form-input">
+                            <input name="entry.582861780" class="form-control bg-dark" type="email" placeholder="email"
+                                style="color: white;" />
+                            <label for="entry.582861780">Email</label>
+                        </div>
+                        <div class="form-floating mb-3 form-input">
+                            <textarea name="entry.1950627590" class="form-control bg-dark" type="text"
+                                placeholder="email" style="height: 30vh; color: white;"></textarea>
+                            <label for="entry.1950627590">Message</label>
+                        </div>
+                        <div class="d-flex flex-row-reverse">
+                            <input type="submit" value="Send" class="btn btn-dark mb-3 btn-lg" />
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container px-4">
